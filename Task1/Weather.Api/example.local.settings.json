@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "WeatherApiOptions:ApiKey": "{{apiKey}}",
+    "WeatherApiOptions:City": "London",
+    "BlobOptions:ContainerName": "weather" 
+  },
+  "ConnectionStrings": {
+    "AzureTableStorage": "UseDevelopmentStorage=true",
+    "AzureBlobStorage": "UseDevelopmentStorage=true"
+  }
+}
