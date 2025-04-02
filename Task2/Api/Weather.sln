@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E72B5924-1ADD-420C-A40A-284071D7848C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather", "Weather", "{C5665545-0582-47EE-8562-B3A84F86E798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Api", "src\Services\Weather\Weather.Api\Weather.Api.csproj", "{97E717A1-77AA-42EF-A948-0095D3138062}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{5CE8A1F0-F89B-4CA8-A152-A842B58EEEAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Application", "src\Services\Weather\Weather.Application\Weather.Application.csproj", "{4D78B49E-323E-A374-0DCA-43CD7EBDFE25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Domain", "src\Services\Weather\Weather.Domain\Weather.Domain.csproj", "{D17A8967-464B-8929-7928-AC74D16051D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Infrastructure", "src\Services\Weather\Weather.Infrastructure\Weather.Infrastructure.csproj", "{41D946AD-AB51-7CB0-5B2E-DF830DC96941}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Envoy", "Envoy", "{4E6CFD60-C1AA-44B9-9401-73234348BC42}"
+	ProjectSection(SolutionItems) = preProject
+		src\Gateway\Envoy\Dockerfile = src\Gateway\Envoy\Dockerfile
+		src\Gateway\Envoy\envoy.yaml = src\Gateway\Envoy\envoy.yaml
+	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "..\docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		..\.env = ..\.env
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97E717A1-77AA-42EF-A948-0095D3138062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97E717A1-77AA-42EF-A948-0095D3138062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97E717A1-77AA-42EF-A948-0095D3138062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97E717A1-77AA-42EF-A948-0095D3138062}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D78B49E-323E-A374-0DCA-43CD7EBDFE25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D78B49E-323E-A374-0DCA-43CD7EBDFE25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D78B49E-323E-A374-0DCA-43CD7EBDFE25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D78B49E-323E-A374-0DCA-43CD7EBDFE25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D17A8967-464B-8929-7928-AC74D16051D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17A8967-464B-8929-7928-AC74D16051D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17A8967-464B-8929-7928-AC74D16051D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17A8967-464B-8929-7928-AC74D16051D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41D946AD-AB51-7CB0-5B2E-DF830DC96941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41D946AD-AB51-7CB0-5B2E-DF830DC96941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41D946AD-AB51-7CB0-5B2E-DF830DC96941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41D946AD-AB51-7CB0-5B2E-DF830DC96941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E72B5924-1ADD-420C-A40A-284071D7848C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C5665545-0582-47EE-8562-B3A84F86E798} = {E72B5924-1ADD-420C-A40A-284071D7848C}
+		{97E717A1-77AA-42EF-A948-0095D3138062} = {C5665545-0582-47EE-8562-B3A84F86E798}
+		{5CE8A1F0-F89B-4CA8-A152-A842B58EEEAB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{4D78B49E-323E-A374-0DCA-43CD7EBDFE25} = {C5665545-0582-47EE-8562-B3A84F86E798}
+		{D17A8967-464B-8929-7928-AC74D16051D3} = {C5665545-0582-47EE-8562-B3A84F86E798}
+		{41D946AD-AB51-7CB0-5B2E-DF830DC96941} = {C5665545-0582-47EE-8562-B3A84F86E798}
+		{4E6CFD60-C1AA-44B9-9401-73234348BC42} = {5CE8A1F0-F89B-4CA8-A152-A842B58EEEAB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A5B1F00-FC5C-4D9A-912D-E059768F00D3}
+	EndGlobalSection
+EndGlobal

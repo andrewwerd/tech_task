@@ -1,0 +1,25 @@
+services:
+  weather-sqldb:
+    image: 'mcr.microsoft.com/mssql/server:latest'
+    container_name: weather-sqldb
+    
+  weather-api:
+    image: ${DOCKER_REGISTRY:-weather}/api
+    container_name: weather-api
+    build:
+      context: ./Api/src/Services/Weather
+      dockerfile: Weather.Api/Dockerfile
+  
+  weather-ui:
+    image: ${DOCKER_REGISTRY:-weather}/ui
+    container_name: weather-ui
+    build:
+      context: ./UI
+      dockerfile: dockerfile
+ 
+  weather-app:
+    image: ${DOCKER_REGISTRY:-weather}/app
+    container_name: weather-app
+    build:
+      context: ./Api
+      dockerfile: src/Gateway/Envoy/Dockerfile
